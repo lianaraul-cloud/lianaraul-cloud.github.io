@@ -1,12 +1,12 @@
 
 
 body {
-    background-color: #fffbd3;
-    font-family:'Times New Roman', Times, serif
-}
+    background-color: #fff6c8;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 nav {
     background-color: rgb(140, 95, 60);
-       height: 85px;
+    height: 150px;
+}
    
 
 }
@@ -16,9 +16,9 @@ nav {
 }
 h1 {
     color: white;
-    font-size: 50px;
-    margin: 0;
-    line-height: 85px;
+    font-size: 70px;
+    margin: -11px;
+    line-height: 150px;
 }
 
 .div1 {
@@ -30,52 +30,118 @@ h1 {
     background-color: #543720;
     border: none;
     color:#c7d5ad;
-    padding: 5px 12px;
+    padding: 10px 30px;
+    font-size: 20px;
     border-radius: 8px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
+    transition: 0.3s;
+
+}
+.button1:hover {
+    background-color: #36462b;
+    color: #c7d5ad
+
 }
 .button2 {
     background-color: #543720;
     
     border: none;
     color:#c7d5ad;
-    padding: 5px 12px;
+    padding: 10px 30px;
+    font-size: 20px;
     border-radius: 8px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
+    transition: 0.3s;
+
+}
+.button2:hover {
+    background-color: #36462b;
+    color: #c7d5ad
+
 }
 .button3 {
     background-color: #543720;
     border: none;
     color: #c7d5ad;
-    padding: 5px 12px;
+    padding: 10px 30px;
+    font-size: 20px;
     border-radius: 8px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
+    transition: 0.3s;
+
 }
 
+
+.button3:hover {
+    background-color: #36462b;
+    color: #c7d5ad
+
+}
 
 
 .h21 {
     text-align:left;
-    color: #42342a;
-    font-size: 50px;
+    color: #634630;
+    font-size: 60px;
     position: absolute;
-    top: 33%;
+    top: 25%;
     left:3%;
 
 }
 .h31 {
     text-align:left;
-    color: #42342a;
-    font-size: 50px;
+    color: #634630;
+    font-size: 45px;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left:3%;
     height: px;
 
 }
+.button4 {
+    background-color: #543720;
+    border: none;
+    color: #c7d5ad;
+    padding: 20px 35px;
+      font-size: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button4:hover {
+    background-color: #36462b;
+    color: #c7d5ad;
+}
+.button4:after {
+    content: "";
+    background: #c7d5ad;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -40px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.button4:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
 
 .facts {
    float: left;
@@ -91,16 +157,26 @@ h1 {
 
 }
 .img1 {
-    background-position: center;
-    position: relative;
-    height: 500px;
-    width: 1700px;
-    right: 10%;
-
+    border-radius: 20px;
+    float: right;
+    margin-top: 90px;
+    margin-right: 10%;
+    border: 7px solid #543720;
+    display: block;
+}
+.img2 {
+    border-radius: 20px;
+    float: left;
+    margin-top: 220px;
+    margin-left: 70%;
+    border: 7px solid #543720;
+    position: absolute;
+    z-index: 10;
 }
 
-.flag {
-    margin-right: 90px;
-    margin-top: 20px;
-    margin-left: 10px;
-}
+
+
+
+
+
+
