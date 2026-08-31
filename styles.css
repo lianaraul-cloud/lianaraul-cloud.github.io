@@ -1,5 +1,12 @@
 
+@view-transition{
+    navihation: auto;
+}
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: #fff6c8;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -26,7 +33,7 @@ h1 {
 }
 
 
-.button1 {
+a {
     background-color: #543720;
     border: none;
     color:#c7d5ad;
@@ -36,56 +43,23 @@ h1 {
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
     transition: 0.3s;
-
-}
-.button1:hover {
-    background-color: #36462b;
-    color: #c7d5ad
-
-}
-.button2 {
-    background-color: #543720;
+    display: inline-block;
+    margin-top: 60px;
     
-    border: none;
-    color:#c7d5ad;
-    padding: 10px 30px;
-    font-size: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif;
-    transition: 0.3s;
 
 }
-.button2:hover {
+a:hover {
     background-color: #36462b;
     color: #c7d5ad
 
 }
-.button3 {
-    background-color: #543720;
-    border: none;
-    color: #c7d5ad;
-    padding: 10px 30px;
-    font-size: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif;
-    transition: 0.3s;
 
-}
-
-
-.button3:hover {
-    background-color: #36462b;
-    color: #c7d5ad
-
-}
 
 
 .h21 {
     text-align:left;
     color: #634630;
-    font-size: 60px;
+    font-size: 57px;
     position: absolute;
     top: 25%;
     left:3%;
@@ -111,13 +85,14 @@ h1 {
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 3%;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     overflow: hidden;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 .button4:hover {
     background-color: #36462b;
