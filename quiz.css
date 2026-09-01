@@ -1,7 +1,0 @@
-@view-transition{
-    navihation: auto;
-}
-@keyframes slide-out {
-    from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
-}
