@@ -7,7 +7,7 @@
 
 body {
     background-color: #fff6c8;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:cursive
 }
 
 nav {
@@ -63,23 +63,31 @@ h1 {
 
 }
 
-
-
 .h21 {
+    text-align:left;
+    color: #36462b;
+    font-size: 70px;
+    position: absolute;
+    top: 24%;
+    left:3%;
+    font-family:'Courier New'
+}
+
+.h31 {
     text-align:left;
     color: #634630;
     font-size: 57px;
     position: absolute;
-    top: 25%;
+    top: 35%;
     left:3%;
 
 }
-.h31 {
+.h32 {
     text-align:left;
     color: #634630;
     font-size: 45px;
     position: absolute;
-    top: 53%;
+    top: 60%;
     left:3%;
     height: px;
 }
@@ -94,7 +102,7 @@ h1 {
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
-    top: 27rem;
+    top: 31rem;
     left: 3.5rem;
     text-decoration: none;
     transition: all 0.5s;
