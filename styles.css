@@ -158,6 +158,25 @@ h1 {
     position: absolute;
     z-index: 10;
 }
+.info-text {
+    text-align: center;
+    color: #543720;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.tutorial {
+    text-align: center;
+    color: #36462b;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.steps {
+    text-align: center;
+    color: #543720;
+    font-size: 25px;
+    margin-top: 20px;
+}
 
 
 

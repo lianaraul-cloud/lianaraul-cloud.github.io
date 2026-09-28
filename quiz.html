@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,24 +7,26 @@
     <title>PinoyTrivia</title>
 </head>
 <body>
+    <audio id="hover-sound" src="hover-effect.wav" preload="auto"></audio>
+    <audio id="click-sound" src="click-effect.wav" preload="auto"></audio>
     <nav>
         <div class="div1"> 
             <h1 class="h11">PinoyTrivia</h1>
         </div>
         <div class="mainnav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="info.html">Info</a></li>
-                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="index.html" class="sound">Home</a></li>
+                <li><a href="info.html" class="sound">Info</a></li>
+                <li><a href="quiz.html" class="sound">Quizzes</a></li>
             </ul>
         </div>
     </nav>
-     <script src="scrips.js"></script>
+     <script src="scripts.js"></script>
 
      <div>
             <h2 class="h22">What type of quiz do you want?</h2>
             <div class="options">
-                <div class="facts">
+                <div class="culture">
                     <img src="https://i.pinimg.com/736x/07/41/7a/07417a5e8a1734503af3ed37044fd515.jpg" alt="Philippines"
                     width="250" height="150">
                 </div>
@@ -34,7 +35,7 @@
                 <img src="https://i.pinimg.com/1200x/51/c3/87/51c38752bd10c35268994982db997dd3.jpg" alr="language"
                 width="250" height="150">
             </div>
-            <div class="language">
+            <div class="popculture">
                 <img src="https://i.pinimg.com/736x/b0/2c/30/b02c30b36aece2e32f3ce6de5df0b35a.jpg"
                 width="250" height="150">
             </div>
@@ -42,3 +43,9 @@
     </section>
 </body>
 </html>
+
+
+<!--text below are the descriptions-->
+<p class="info-text"> <strong>Kasaysayan (History):</strong>  Journey through time from pre-colonial eras and heroic revolutions to modern historical milestones.</p>
+        <p class="info-text"> <strong>Kultura (Culture):</strong>  Explore the rich tapestry of Filipino traditions, festivals, and customs that define our identity.</p>
+        <p class="info-text"> <strong>Pop Culture:</strong>  Dive into the vibrant world of Filipino entertainment, music, and contemporary trends that shape our society today.</p>
