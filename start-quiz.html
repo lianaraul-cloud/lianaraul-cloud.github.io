@@ -14,7 +14,7 @@
     <audio id="incorrect-sound" src="incorrect-effect.wav" preload="auto"></audio>
     <nav>
         <div class="div1"> 
-            <h1 class="title">PinoyTrivia: History</h1>
+            <h1 class="title">PinoyTrivia</h1>
         </div>
         <div class="mainnav">
             <ul>
@@ -24,19 +24,24 @@
             </ul>
         </div>
     </nav>
-    <script src="scripts.js"></script>\
 <section>
-    <div class="quiz">
-        <h2 class="numbers"> Question 2</h2>
-        <p class="questions"> Who was the first President of the Philippines?</p>
+    <div id="quiz-view" class="questions">
+        <div id="progress" class="progress-text">Question 1 of 5</div>
+        <h2 id="question" class="question-text">Loading question...</h2>
+        <div id="options-box"></div>
+        <p id="explanation" class="explantion-text"></p>
 
-        <a class="sound" href="#" onclick="checkQuestion1('correct')"> Emilio Aguinaldo</a>
-        <a class="sound" href="#" onclick= "checkQuestion1('incorrect')"> Manuel L. Quezon</a>
-        <a class="sound" href="#" onclick="checkQuestion1('incorrect')"> Jose P. Laurel</a>
-        <a class="sound" href="#" onclick= "checkQuestion1('incorrect')"> Sergio Osmena</a>
-
-        <p id="answer1"></p>
-
-         <a href="quiz.html" class="back button sound"><span>Back</span></a>
+        <button id="next-button" class="next-button sound" onclick="moveToNext()"><span>Next</span></button>
+        <button id="see-results-button" class="next-button sound hidden" onclick="showResults()"><span>See Results</span></button>
     </div>
+
+    <div id="results-view" class="hidden center-text"> 
+        <h2 class="results-title">Quiz Completed!</h2>
+        <p id="score-summary"></p>
+        <a href="quiz.html" class="back button sound"><span>Back to Quizzes</span></a>
+    </div>
+
+    <script src="scripts.js"></script>
+
 </section>
+    

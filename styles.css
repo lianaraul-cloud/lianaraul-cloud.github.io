@@ -20,7 +20,7 @@ nav {
    
 
 
-.h11 {
+.title {
     text-align: center;
     height: 85px;
     color: white;
@@ -283,11 +283,7 @@ nav {
 
 } 
 
-.title {   
-    text-align: center;
-    height: 85px;
-    color: white;
-    font-size: 60px;
-    margin: -11px;
-    line-height: 150px;
+
+.hidden {
+    display: none;
 }
