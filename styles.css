@@ -8,7 +8,8 @@
 
 body {
     background-color: #fff6c8;
-    font-family:cursive
+    font-family:cursive;
+    overflow-x: hidden;
 
 }
 
@@ -22,8 +23,6 @@ nav {
 .h11 {
     text-align: center;
     height: 85px;
-}
-h1 {
     color: white;
     font-size: 70px;
     margin: -11px;
@@ -261,3 +260,34 @@ h1 {
 
 }
 
+.go-back-home a {
+  background-color: #36462b;
+    color: #c7d5ad;
+    padding: 4px 4px;
+    border-radius: 8px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #36462b;
+    display: inline-block;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    margin-top: 30px;
+    margin-left: 30px;
+    align-self: center;
+}
+.go-back-home a:hover {
+    transform: scale(1.1);
+    background-color: #36462b;
+    color: #c7d5ad;
+
+} 
+
+.title {   
+    text-align: center;
+    height: 85px;
+    color: white;
+    font-size: 60px;
+    margin: -11px;
+    line-height: 150px;
+}
