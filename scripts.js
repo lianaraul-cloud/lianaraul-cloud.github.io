@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
          },250);
         });  
     });
+    const soundButtons = document.querySelectorAll('button.sound');
+    soundButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            clickSound.currentTime = 0;
+            clickSound.play().catch(() => {});
+        });
+    });
 
 });
 
@@ -72,7 +79,31 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["Andres Bonifacio", "Jose Rizal", "Emilio Aguinaldo", "Apolinatio Mabini"],
             answer: "Jose Rizal",
             explanation: "Jose Rizal’s writings inspired Filipinos to fight for independence through peaceful reform."
-        }
+        },
+        {
+            question: "When did the Philippines declare independence from Spain?",
+            options: ["June 12, 1898", "July 4, 1946", "August 21, 1896", "December 30, 1896"],
+            answer: "June 12, 1898",
+            explanation: "Emilio Aguinaldo declared independence in Kawit, Cavite on June 12, 1898."
+        },
+        {
+            question: "Which country colonized the Philippines after Spain?",
+            options: ["China", "Japan", "USA", "UK"],
+            answer: "USA",
+            explanation: "The USA took control after the Spanish-American War in 1898."
+        },
+        {
+            question: "Which Filipino hero is known as the 'Brains of the Revolution'?",
+            options: ["Apolinario Mabini", "Andres Bonifacio", "Emilio Jacinto", "Bongbong Marcon"],
+            answer: "Apolinario Mabini",
+            explanation: "Mabini guided the revolutionary government with his political writings and leadership."
+        },
+        {
+            question: "Who was the first president of the Philippines?",
+            options: ["Melchora Aquino", "Andres Bonifacio", "Gregorio del Pilar", "Emilio Aguinaldo"],
+            answer: "Emilio Aguinaldo",
+            explanation: "Aguinaldo Filipino revolutionary, politician, and military leader who served as president of the Philippines from 1899 to 1901."
+        },
     ],
     popculture: [
         {
@@ -80,7 +111,31 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["Regine Velasquez", "Moira Dela Torre", "Sarah Geronimo", "Lea Salonga"],
             answer: "Lea Salonga",
             explanation: "Lea Salonga is a singer and actress, whom Disney inducted as a Disney Legend for being the voice of Jasmine and Mulan, imacting Disney's animated musical history.",
-        }
+        },
+        {
+            question: "Which Filipino boy band become globally known for their song 'Gento'?",
+            options: ["BGYO", "The Juans", "SB19", "Ben&Ben"],
+            answer: "SB19",
+            explanation: "SB19 gained international recognition and became the first Filipino act nominated for Billboard Music Awards."
+        },
+        {
+           question: "Which Filipino actress is knows as the 'Millennial Queen of Philippine Movies'?",
+            options: ["Kathryn Bernardo", "Liza Soberano", "Nadine Lustre", "Julia Burretto"],
+            answer: "Kathryn Bernardo",
+            explanation: "Kathryn Bernardo earned the title due to her record‑breaking films and massive influence." 
+        },
+        {
+            question: "What is the longest-running noontime show in the Philippines?",
+            options: ["Eat Bulaga!", "It's Showtime", "Wowowin", "ASAP"],
+            answer: "Eat Bulaga!",
+            explanation: "Eat Bulaga! has been airing since 1979, making it the longest-running noontime show."
+        },
+           {
+            question: "Which Filipino love team is known as 'LizQuen'?",
+            options: ["Kathryn Bernardp and Daniel Padilla", "Nadine Lustre and James Reid", "Julia Barrtto and Josua Garcia", "Liza Soberano and Enrique Gil"],
+            answer: "Liza Soberano and Enrique Gil",
+            explanation: "LizQuen became one of the most popular love teams through their movies and teleseryes."
+        },
 
     ]
 };
@@ -181,9 +236,37 @@ function showResults() {
     document.getElementById("quiz-view").classList.add("hidden");
     document.getElementById("results-view").classList.remove("hidden");
 
+
     const totalQuestions = quizDatabase[currentTopic].length;
-    document.getElementById("score-summary").innerText = `You finished the ${currentTopic.toUpperCase()} quiz with a score of ${runningScore} out of ${totalQuestions}.`;
+    const scoreSummary = document.getElementById("score-summary");
+    const resultMessage = document.getElementById("result-message");
+    scoreSummary.innerText = `You finished the ${currentTopic.toUpperCase()} quiz with a score of ${runningScore} out of ${totalQuestions}.`;
+
+    if (runningScore === totalQuestions) {
+        resultMessage.innerText = "Perfect score! Ang galing mo!";
+
+    } else if (runningScore >= totalQuestions * 0.7) {
+        resultMessage.innerText = "Great job! You really know your stuff!";
+
+    }else if (runningScore >= totalQuestions * 0.4) {
+        resultMessage.innerText = "Not bad! Keep learning and try again!";
+
+    }else {
+        resultMessage.innerText = "It's okay! You'll do better next time!";
+    }
+    
 }
+    document.getElementById("try-again-button").addEventListener("click", () => {
+        runningScore = 0;
+        questionIndex = 0;
+        selectedAnswer = null;
+
+        document.getElementById("results-view").classList.add("hidden");
+        document.getElementById("quiz-view").classList.remove("hidden");
+
+
+        renderActiveQuestion();
+    });
 function resetToQuiz() {
     document.getElementById("results-view").classList.add("hidden");
     document.getElementById("quiz-view").classList.remove("hidden");
