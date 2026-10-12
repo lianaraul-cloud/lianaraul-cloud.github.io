@@ -7,6 +7,7 @@
     <title>PinoyTrivia</title>
 </head>
 <body>
+    <!--Links the sounds for the buttons-->
     <audio id="hover-sound" src="hover-effect.wav" preload="auto"></audio>
     <audio id="click-sound" src="click-effect.wav" preload="auto"></audio>
 
@@ -16,6 +17,7 @@
         <div class="div1"> 
             <h1 class="title">PinoyTrivia</h1>
         </div>
+        <!--makes the link clickable and brings the user to a new link-->
         <div class="mainnav">
             <ul>
                 <li><a href="index.html" class="sound">Home</a></li>
@@ -24,7 +26,7 @@
             </ul>
         </div>
     </nav>
-<section>
+<section><!--This section import the questions depending on what quiz the user chooses-->
     <div id="quiz-view" class="questions">
         <div id="progress" class="progress-text">Question 1 of 5</div>
         <h2 id="question" class="question-text">Loading question...</h2>
@@ -34,7 +36,7 @@
         <button id="next-button" class="next-button sound" onclick="moveToNext()"><span>Next</span></button>
         <button id="see-results-button" class="next-button sound hidden" onclick="showResults()"><span>See Results</span></button>
     </div>
-
+    <!--After finishing the quiz, this div appears, getting rid of teh questions, and shows the user's score-->
     <div id="results-view" class="hidden center-text"> 
         <h2 class="results-title">Quiz Completed!</h2>
         <p id="score-summary"></p>
@@ -43,7 +45,7 @@
         <p id="result-message"></p>
         <div class="sparkle">✨</div>
     </div>
-
+<!--Links the html to java scripts-->
     <script src="scripts.js"></script>
 
 </section>

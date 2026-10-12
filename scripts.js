@@ -1,3 +1,5 @@
+
+//gives sounds when button/link is clicked and hovered over
 document.addEventListener('DOMContentLoaded', function() {
     const hoverSound = document.getElementById('hover-sound');
     const clickSound = document.getElementById('click-sound');
@@ -38,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-
+    //add the questions and correct answers for each type of quiz
     const quizDatabase = {
     culture: [
         {
@@ -76,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     history: [
         {
             question:"Who is known as the national hero of the Philippines?",
-            options: ["Andres Bonifacio", "Jose Rizal", "Emilio Aguinaldo", "Apolinatio Mabini"],
+            options: ["Andres Bonifacio", "Jose Rizal", "Emilio Aguinaldo", "Apolinario Mabini"],
             answer: "Jose Rizal",
             explanation: "Jose Rizal’s writings inspired Filipinos to fight for independence through peaceful reform."
         },
@@ -94,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             question: "Which Filipino hero is known as the 'Brains of the Revolution'?",
-            options: ["Apolinario Mabini", "Andres Bonifacio", "Emilio Jacinto", "Bongbong Marcon"],
+            options: ["Apolinario Mabini", "Andres Bonifacio", "Emilio Jacinto", "Bongbong Marcos"],
             answer: "Apolinario Mabini",
             explanation: "Mabini guided the revolutionary government with his political writings and leadership."
         },
@@ -139,6 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     ]
 };
+//adds special sound when user clicks the correct or wrong answer
  const correctAudio = document.getElementById('correct-sound');
 const incorrectAudio = document.getElementById('incorrect-sound');
 
@@ -232,6 +235,7 @@ function moveToNext() {
         showResults();
     }
 }
+//shows user's result
 function showResults() {
     document.getElementById("quiz-view").classList.add("hidden");
     document.getElementById("results-view").classList.remove("hidden");
@@ -241,7 +245,7 @@ function showResults() {
     const scoreSummary = document.getElementById("score-summary");
     const resultMessage = document.getElementById("result-message");
     scoreSummary.innerText = `You finished the ${currentTopic.toUpperCase()} quiz with a score of ${runningScore} out of ${totalQuestions}.`;
-
+//gives them messages depending on what score they got
     if (runningScore === totalQuestions) {
         resultMessage.innerText = "Perfect score! Ang galing mo!";
 
@@ -255,7 +259,7 @@ function showResults() {
         resultMessage.innerText = "It's okay! You'll do better next time!";
     }
     
-}
+}   //allows user to try again by making the button restart the quiz when clicked
     document.getElementById("try-again-button").addEventListener("click", () => {
         runningScore = 0;
         questionIndex = 0;
@@ -267,6 +271,7 @@ function showResults() {
 
         renderActiveQuestion();
     });
+    //restart quiz and score
 function resetToQuiz() {
     document.getElementById("results-view").classList.add("hidden");
     document.getElementById("quiz-view").classList.remove("hidden");
