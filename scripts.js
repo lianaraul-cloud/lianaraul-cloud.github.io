@@ -73,7 +73,39 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["Tinikling", "Singkil", "Pandanggo sa Ilaw", "Cariñosa"],
             answer: "Pandanggo sa Ilaw",
             explanation: "Pandanggo sa Ilaw is a dance where performers balance oil lamps while dancing gracefully."
-        }
+        },
+        {
+            question: "What is the Philippines curency called?",
+            options: ["Pounds", "Peso", "Yen", "Won"],
+            answer: "Peso",
+            explanation: "Peso, also called Piso by the locals, is used due to Philippines being colonised by Spain."
+        },
+        {
+            question: "What is the most coomon way of transport used in the Philippines?",
+            options: ["Car", "Bus", "Jeep", "Tricycle"],
+            answer: "Jeep",
+            explanation: "Jeeps evolved from post-World War II US Military Jeeps and are now used as a public transport that are colourfully decorated."
+        },
+        {
+            question: "Which Filipino dessert is made of shaved ice, milk, and mixed toppings?",
+            options: ["Bibingka", "Leche Flan", "Turon", "Halo-Halo"],
+            answer: "Halo-Halo",
+            explanation: "Halo-Halo is a popular cold dessert with ice, milk, fruits, beans, and leche flan."
+        },
+        {
+            question: "What is the national bird of the Philippines?",
+            options: ["Philippine Eagle", "Tinkling Cristicola", "Maleo", "Crested Ibis"],
+            answer: "Philippine Eagle",
+            explanation: "Philippine Eagle, also known as monkey-eating eagle, is the strongest easgle in the world and represents the strength, power, uniqueness, and love for freedom of the Filipino people."
+        },
+        {
+            question: "WHat is the national anthem of the Philippines?",
+            options: ["Kassaman", "Lupang Hinirang", "Motherland", "Marcha Real"],
+            answer: "Lupang Hinirang",
+            explanation: "Lupang Hinirang is the national anthem in the Philippines, celebrating the country's freedom, national beauty, and resisntance against forein colonisers."
+        },
+
+
     ],
     history: [
         {
@@ -106,6 +138,36 @@ document.addEventListener('DOMContentLoaded', function() {
             answer: "Emilio Aguinaldo",
             explanation: "Aguinaldo Filipino revolutionary, politician, and military leader who served as president of the Philippines from 1899 to 1901."
         },
+        {
+            question: "?",
+            options: ["", "", "", ""],
+            answer: "",
+            explanation: "."
+        },
+        {
+            question: "?",
+            options: ["", "", "", ""],
+            answer: "",
+            explanation: "."
+        },
+        {
+            question: "?",
+            options: ["", "", "", ""],
+            answer: "",
+            explanation: "."
+        },
+        {
+            question: "?",
+            options: ["", "", "", ""],
+            answer: "",
+            explanation: "."
+        },
+        {
+            question: "?",
+            options: ["", "", "", ""],
+            answer: "",
+            explanation: "."
+        },
     ],
     popculture: [
         {
@@ -137,6 +199,36 @@ document.addEventListener('DOMContentLoaded', function() {
             options: ["Kathryn Bernardp and Daniel Padilla", "Nadine Lustre and James Reid", "Julia Barrtto and Josua Garcia", "Liza Soberano and Enrique Gil"],
             answer: "Liza Soberano and Enrique Gil",
             explanation: "LizQuen became one of the most popular love teams through their movies and teleseryes."
+        },
+        {
+            question: "Which Filipino singer sang the viral hit 'Bawan'?",
+            options: ["Arthur Nery", "Zack Tubudlo", "Juan Karlos", "Adie"],
+            answer: "Juan Karlos",
+            explanation: "'Buwan' became a massive OPM (Original Philipino Music) with miliions of stream."
+        },
+        {
+            question: "Who is the only professional boxer to become the only eight-division world champion in boxing history?",
+            options: ["Luisito Espinosa", "Donnie Nietes", "Pancho Villa", "Manny Pacquiao"],
+            answer: "Manny Pacquiao", 
+            explanation: "Manny Pacquiao is widely regarded as one of the greatest boxers of all time."
+        },
+        {
+            question: "Which OPM (Original Pilipino Mucic) is known for the song 'Kathang Isip'?",
+            options: ["Silent Sanctuary", "Parokya ni Edgar", "Ben&Ben", "December Avenue"],
+            answer: "Ben&Ben",
+            explanation: "Ben&Ben is known for emotional folk-pop song."
+        },
+        {
+            question: "?",
+            options: ["", "", "", ""],
+            answer: "",
+            explanation: "."
+        },
+        {
+            question: "?",
+            options: ["", "", "", ""],
+            answer: "",
+            explanation: "."
         },
 
     ]
