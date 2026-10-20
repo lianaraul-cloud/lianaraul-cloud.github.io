@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
             explanation: "Peso, also called Piso by the locals, is used due to Philippines being colonised by Spain."
         },
         {
-            question: "What is the most coomon way of transport used in the Philippines?",
+            question: "What is the most common way of transport used in the Philippines?",
             options: ["Car", "Bus", "Jeep", "Tricycle"],
             answer: "Jeep",
             explanation: "Jeeps evolved from post-World War II US Military Jeeps and are now used as a public transport that are colourfully decorated."
