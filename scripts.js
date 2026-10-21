@@ -139,16 +139,16 @@ document.addEventListener('DOMContentLoaded', function() {
             explanation: "Aguinaldo Filipino revolutionary, politician, and military leader who served as president of the Philippines from 1899 to 1901."
         },
         {
-            question: "?",
-            options: ["", "", "", ""],
-            answer: "",
-            explanation: "."
+            question: "Which president is in the ₱20 bill?",
+            options: ["BongBong Marcos", "Manuel L. Quezon", "Ninoy Aquino", "Rodrigo Duterte"],
+            answer: "Manuel L. Quezon",
+            explanation: "Manuel L. Quezon served as a president in November 15, 1935, until his death on August 1, 1944, is on the ₱20 bill since 1967."
         },
         {
-            question: "?",
-            options: ["", "", "", ""],
-            answer: "",
-            explanation: "."
+            question: "Who killed the portuguese explorer, Ferdinand Magellan?",
+            options: ["Lapulapu", "Sarah Duterte", "Gabriela Silang", "Heneral Luna"],
+            answer: "Lapulapu",
+            explanation: "Lapulapu is a Filipino tribal leader who killed Magellan to keep their independence in the Battle of Mactan on April 27, 1521."
         },
         {
             question: "?",
