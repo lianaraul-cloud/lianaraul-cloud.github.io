@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
             question: "WHat is the national anthem of the Philippines?",
             options: ["Kassaman", "Lupang Hinirang", "Motherland", "Marcha Real"],
             answer: "Lupang Hinirang",
-            explanation: "Lupang Hinirang is the national anthem in the Philippines, celebrating the country's freedom, national beauty, and resisntance against forein colonisers."
+            explanation: "Lupang Hinirang is the national anthem in the Philippines, celebrating the country's freedom, national beauty, and resisntance against foreign colonisers."
         },
 
 
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
             question: "Who was the first president of the Philippines?",
             options: ["Melchora Aquino", "Andres Bonifacio", "Gregorio del Pilar", "Emilio Aguinaldo"],
             answer: "Emilio Aguinaldo",
-            explanation: "Aguinaldo Filipino revolutionary, politician, and military leader who served as president of the Philippines from 1899 to 1901."
+            explanation: "Aguinaldo is a Filipino revolutionary, politician, and military leader who served as president of the Philippines from 1899 to 1901."
         },
         {
             question: "Which president is in the ₱20 bill?",
@@ -154,13 +154,13 @@ document.addEventListener('DOMContentLoaded', function() {
             question: "When did Ferdinand Marcos publicly annouce martial law?",
             options: ["October 24, 1967", "March 7, 1968", "September 23, 1972", "April 6, 1970"],
             answer: "September 23, 1972",
-            explanation: "Ferdinand Marcos declared martial law to bypass term limits and stay in power, which led him to saty as president for 21 years."
+            explanation: "Ferdinand Marcos declared martial law to bypass term limits and stay in power, which led him to stay as president for 21 years."
         },
         {
             question: "How many presidents has Philippines had?",
             options: ["19", "20", "18", "17"],
             answer: "17",
-            explanation: "Before Marcos, many president only served for a few years, so in 1987, a rule was made so that president may only rule for 6 years."
+            explanation: "Before Marcos, many presidents only served for a few years, so in 1987, a rule was made so that a president may only rule for 6 years."
         },
         {
             question: " What is the oldest known written legal document in the Philippines?",
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
             question: "Which famous Filipino singer known as a Disney legend for being the first and only singer to voice 2 Disney character?",
             options: ["Regine Velasquez", "Moira Dela Torre", "Sarah Geronimo", "Lea Salonga"],
             answer: "Lea Salonga",
-            explanation: "Lea Salonga is a singer and actress, whom Disney inducted as a Disney Legend for being the voice of Jasmine and Mulan, imacting Disney's animated musical history.",
+            explanation: "Lea Salonga is a singer and actress, whom Disney inducted as a Disney Legend for being the voice of Jasmine and Mulan, impacting Disney's animated musical history.",
         },
         {
             question: "Which Filipino boy band become globally known for their song 'Gento'?",
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
             question: "Which Filipino singer sang the viral hit 'Buwan'?",
             options: ["Arthur Nery", "Zack Tubudlo", "Juan Karlos", "Adie"],
             answer: "Juan Karlos",
-            explanation: "'Buwan' became a massive OPM (Original Philipino Music) with miliions of stream."
+            explanation: "'Buwan' became a massive OPM (Original Philipino Music) with miliions of streams."
         },
         {
             question: "Who is the only professional boxer to become the only eight-division world champion in boxing history?",
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
             question: "What is Vice Ganda's real name?",
             options: ["Richard Reyes Faulkerson Jr.", "Jose Marie Borja Vicera", "Donato Antonio Laxa Pangilinan", "odel Pacheco Nacianceno"],
             answer: "Jose Marie Borja Vicera",
-            explanation: "Jose Marie Borja Vicera started getting called 'Vice Ganda' in the start of her career, 1997, and is now a comedian, television host, actor, singer, and businessman."
+            explanation: "Jose Marie Borja Vicera started getting called 'Vice Ganda' in the start of his career, 1997, and is now a comedian, television host, actor, singer, and businessman."
         },
         {
             question: "Who is the Co-founder, President, and Creative Director of the record label, G Music?",

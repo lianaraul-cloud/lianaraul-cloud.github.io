@@ -299,13 +299,13 @@ nav {
 .next-button {
     background-color: #543720;
     color: #c7d5ad;
-    padding: 12px 25px;
+    padding: 15px 30px;
     border-radius: 12px;
     text-decoration: none;
     letter-spacing: 1px;
     border: 1px solid #543720;
     display: inline-block;
-    font-size: 22px;
+    font-size: 20px;
     transition: all 0.3s ease;
     margin-top: 20px;
     margin-left: 90%;
@@ -334,6 +334,7 @@ nav {
     font-size: 20px;
     transition: transform 0.3s ease;
     margin-left: 15px;
+    margin-bottom: 10px;
     align-self: center;
 }
 .go-back-home a:hover {
