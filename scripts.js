@@ -151,22 +151,22 @@ document.addEventListener('DOMContentLoaded', function() {
             explanation: "Lapulapu is a Filipino tribal leader who killed Magellan to keep their independence in the Battle of Mactan on April 27, 1521."
         },
         {
-            question: "?",
-            options: ["", "", "", ""],
-            answer: "",
-            explanation: "."
+            question: "When did Ferdinand Marcos publicly annouce martial law?",
+            options: ["October 24, 1967", "March 7, 1968", "September 23, 1972", "April 6, 1970"],
+            answer: "September 23, 1972",
+            explanation: "Ferdinand Marcos declared martial law to bypass term limits and stay in power, which led him to saty as president for 21 years."
         },
         {
-            question: "?",
-            options: ["", "", "", ""],
-            answer: "",
-            explanation: "."
+            question: "How many presidents has Philippines had?",
+            options: ["19", "20", "18", "17"],
+            answer: "17",
+            explanation: "Before Marcos, many president only served for a few years, so in 1987, a rule was made so that president may only rule for 6 years."
         },
         {
-            question: "?",
-            options: ["", "", "", ""],
-            answer: "",
-            explanation: "."
+            question: " What is the oldest known written legal document in the Philippines?",
+            options: ["Lumang Tipan", "Noli Me Tángere", "Laguna Copperplate Inscription", "Ang Paboritong Libro ni Hudas"],
+            answer: "Laguna Copperplate Inscription",
+            explanation: "The Laguna Copperplate Inscription is a calendar-dated written document written in Old Malay dating back to April 12, 900 CE ."
         },
     ],
     popculture: [
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
             explanation: "LizQuen became one of the most popular love teams through their movies and teleseryes."
         },
         {
-            question: "Which Filipino singer sang the viral hit 'Bawan'?",
+            question: "Which Filipino singer sang the viral hit 'Buwan'?",
             options: ["Arthur Nery", "Zack Tubudlo", "Juan Karlos", "Adie"],
             answer: "Juan Karlos",
             explanation: "'Buwan' became a massive OPM (Original Philipino Music) with miliions of stream."
@@ -219,16 +219,16 @@ document.addEventListener('DOMContentLoaded', function() {
             explanation: "Ben&Ben is known for emotional folk-pop song."
         },
         {
-            question: "?",
-            options: ["", "", "", ""],
-            answer: "",
-            explanation: "."
+            question: "What is Vice Ganda's real name?",
+            options: ["Richard Reyes Faulkerson Jr.", "Jose Marie Borja Vicera", "Donato Antonio Laxa Pangilinan", "odel Pacheco Nacianceno"],
+            answer: "Jose Marie Borja Vicera",
+            explanation: "Jose Marie Borja Vicera started getting called 'Vice Ganda' in the start of her career, 1997, and is now a comedian, television host, actor, singer, and businessman."
         },
         {
-            question: "?",
-            options: ["", "", "", ""],
-            answer: "",
-            explanation: "."
+            question: "Who is the Co-founder, President, and Creative Director of the record label, G Music?",
+            options: ["Sarah Geronimo", "Bea Alonzo", "Kim Chiu", "Andrea Brillantes"],
+            answer: "Sarah Geronimo",
+            explanation: "Sarah Geronimo founded G Music alongside Matteo Guidicelli in 2025."
         },
 
     ]

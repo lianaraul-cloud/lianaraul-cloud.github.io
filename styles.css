@@ -176,18 +176,46 @@ nav {
     position: absolute;
     z-index: 10;
 }
+.greetings {
+    text-align: center;
+    color: #36462b;
+    font-size: 30px;
+    margin-top: 10px;
+    text-shadow: 0 4px 10px rgba(9, 82, 9, 0.168);;
+}
 .info-text {
     text-align: center;
     color: #543720;
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 20px;
+    margin-top: 2px;
+    padding-bottom: 2%;
+    width: 95%;
+    margin-left: 45px;
+    text-shadow: 0 4px 10px rgba(106, 71, 29, 0.311);;
 }
 
+.tutorial-section {
+    width: 75%;
+    height: 350px;
+    border: 4px solid #543720;
+    background-color: #fff6c8;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    box-shadow: 0 4px 10px rgba(7, 42, 6, 0.416);
+}
 .tutorial {
+    color: #fff6c8;
+    font-size: 40px;
+    border-radius: 8px;
+    background-color: #543720;
+    width: 30%;
     text-align: center;
-    color: #36462b;
-    font-size: 50px;
-    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(34, 81, 11, 0.486);;
 }
 .steps {
     text-align: center;
@@ -294,9 +322,9 @@ nav {
 }
 
 .go-back-home a {
-  background-color: #36462b;
+    background-color: #36462b;
     color: #c7d5ad;
-    padding: 4px 4px;
+    padding: 8px 6px;
     border-radius: 8px;
     text-decoration: none;
     letter-spacing: 1px;
@@ -305,8 +333,7 @@ nav {
     display: inline-block;
     font-size: 20px;
     transition: transform 0.3s ease;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 15px;
     align-self: center;
 }
 .go-back-home a:hover {
