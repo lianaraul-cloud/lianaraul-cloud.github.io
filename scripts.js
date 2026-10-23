@@ -1,5 +1,5 @@
 
-//gives sounds when button/link is clicked and hovered over
+// plays sound effects when user hover over or click buttons and links
 document.addEventListener('DOMContentLoaded', function() {
     const hoverSound = document.getElementById('hover-sound');
     const clickSound = document.getElementById('click-sound');
@@ -40,8 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-    //add the questions and correct answers for each type of quiz
+    // stores all the quiz questions, answers and explanation
     const quizDatabase = {
+    // Filipino culture quiz question
     culture: [
         {
             question: "When do Filipinos typically start celebrating and preparing for Christmas?",
@@ -107,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     ],
+    // FIlipino history quiz question
     history: [
         {
             question:"Who is known as the national hero of the Philippines?",
@@ -169,6 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
             explanation: "The Laguna Copperplate Inscription is a calendar-dated written document written in Old Malay dating back to April 12, 900 CE ."
         },
     ],
+    // Filipino pop culture quiz questions 
     popculture: [
         {
             question: "Which famous Filipino singer known as a Disney legend for being the first and only singer to voice 2 Disney character?",
@@ -233,14 +236,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     ]
 };
-//adds special sound when user clicks the correct or wrong answer
+//Audio effect for correct and incorrect answers
  const correctAudio = document.getElementById('correct-sound');
 const incorrectAudio = document.getElementById('incorrect-sound');
 
 let currentTopic = '';
 let questionIndex = 0;
 let runningScore = 0;
-
+// variables used to track quiz, progress, and scores
 function initiateQuiz(topicKey) {
     currentTopic = topicKey;
     questionIndex = 0;
@@ -250,7 +253,7 @@ function initiateQuiz(topicKey) {
     document.getElementById("quiz-view").classList.remove('hidden');
     renderActiveQuestion();
 }
-
+// Display the currect question and generate answer buttons
 function renderActiveQuestion() {
     document.getElementById("next-button").style.display = "none";
     document.getElementById("see-results-button").classList.add("hidden");
@@ -277,15 +280,17 @@ function renderActiveQuestion() {
         optionsContainer.appendChild(choiceButton);
     });
 }
-
+// Check whether the selected answer is correct
 function evaluateAnswer(selectedOption, buttonElement) {
     const correctString = quizDatabase[currentTopic][questionIndex].answer;
     const explanationText = quizDatabase[currentTopic][questionIndex].explanation;
     const optionsContainer = document.getElementById("options-box");
     const allButtons = optionsContainer.querySelectorAll("button");
 
+    // prevent the user from selecting another answer
     allButtons.forEach(btn => btn.disabled = true);
 
+    // highlight the selected answer and play the appropriate sound effect
     if (selectedOption === correctString) {
         buttonElement.style.backgroundColor = "#c8e6c9";
         buttonElement.style.color = "#1d351e";
@@ -307,8 +312,10 @@ function evaluateAnswer(selectedOption, buttonElement) {
         if (incorrectAudio) { incorrectAudio.currentTime = 0; incorrectAudio.play().catch(() => {}); }
     }
 
+    // Display the explation for the correct answer
     document.getElementById("explanation").innerText = explanationText;
 
+    // Determine whether to show the next button or See result button
     const totalQuestions = quizDatabase[currentTopic].length;
     if (questionIndex + 1 === totalQuestions) {
         document.getElementById("next-button").style.display ="none";
@@ -318,6 +325,7 @@ function evaluateAnswer(selectedOption, buttonElement) {
     }
 }
 
+// move to the next question
 function moveToNext() {
     questionIndex++;
     const TotalQuestions = quizDatabase[currentTopic].length;
@@ -327,7 +335,7 @@ function moveToNext() {
         showResults();
     }
 }
-//shows user's result
+// shows user's result and feedback message
 function showResults() {
     document.getElementById("quiz-view").classList.add("hidden");
     document.getElementById("results-view").classList.remove("hidden");
@@ -337,7 +345,8 @@ function showResults() {
     const scoreSummary = document.getElementById("score-summary");
     const resultMessage = document.getElementById("result-message");
     scoreSummary.innerText = `You finished the ${currentTopic.toUpperCase()} quiz with a score of ${runningScore} out of ${totalQuestions}.`;
-//gives them messages depending on what score they got
+
+// Generate feedback based on the user's score
     if (runningScore === totalQuestions) {
         resultMessage.innerText = "Perfect score! Ang galing mo!";
 
@@ -351,7 +360,7 @@ function showResults() {
         resultMessage.innerText = "It's okay! You'll do better next time!";
     }
     
-}   //allows user to try again by making the button restart the quiz when clicked
+}   // Restart the quiz when Try Again button is clicked
     document.getElementById("try-again-button").addEventListener("click", () => {
         runningScore = 0;
         questionIndex = 0;
@@ -363,15 +372,17 @@ function showResults() {
 
         renderActiveQuestion();
     });
-    //restart quiz and score
+// restart quiz and score
 function resetToQuiz() {
     document.getElementById("results-view").classList.add("hidden");
     document.getElementById("quiz-view").classList.remove("hidden");
 }
 
+// Read the selected quiz from the URL
 const urlParams = new URLSearchParams(window.location.search);
 const topic = urlParams.get("topic");
 
+// Automatically load the chosen quiz category
 if (topic) {
     initiateQuiz(topic);
 }

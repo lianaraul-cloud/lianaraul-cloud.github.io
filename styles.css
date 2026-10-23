@@ -1,19 +1,22 @@
 
 
+/* Reset default brower styling */
 * {
     margin: 0;
     box-sizing: border-box;
 
 }
+/* Page fade-in animation for quiz and result screens */
 #quiz-view, #results-view {
     animation: fadeIn 0.6s ease;
 }
-
+/* Fade in animation effect */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0);}
 }
 
+/*  General page styling */
 body {
     background-color: #fff6c8;
     font-family:cursive;
@@ -21,7 +24,7 @@ body {
 
 }
 
-
+/* Navigation bar styling */
 nav {
     background-color: rgb(140, 95, 60);
     height: 150px;
@@ -29,7 +32,7 @@ nav {
 }
    
 
-
+/* Website title */
 .title {
     text-align: center;
     height: 85px;
@@ -44,13 +47,14 @@ nav {
    height: 42px;
 }
 
+/* Navigation menu container */
 .mainnav ul {
     list-style: none;
     display: flex;
     gap: 15px;
     padding: 11px;
 }
-
+/* Navigation buttons */
 .mainnav a {
     background-color: #543720;
     color:#c7d5ad;
@@ -68,6 +72,7 @@ nav {
 
 
 }
+/* Navigation buttons hover effect */
 .mainnav a:hover {
     transform: scale(1.2);
     background-color: #36462b;
@@ -76,6 +81,7 @@ nav {
 
 }
 
+/* Home page main headinf */
 .h21 {
     text-align:left;
     color: #36462b;
@@ -87,6 +93,7 @@ nav {
     text-shadow: 2px 2px #4a5a3f;
 }
 
+/* Home page second heading */
 .h31 {
     text-align:left;
     color: #634630;
@@ -97,6 +104,8 @@ nav {
     text-shadow: 2px 2px #d9b382;
 
 }
+
+/* Home page description heading */
 .h32 {
     text-align:left;
     color: #634630;
@@ -107,6 +116,8 @@ nav {
     height: px;
         text-shadow: 2px 2px #d9b382;
 }
+
+/* Start quiz button */
 .button4 {
     background-color: #543720;
     border: 1px solid #543720;
@@ -134,6 +145,7 @@ nav {
     position: relative;
     transition: 0.5s;
 }
+/* Start quiz button animation */
 .button4 span:after {
     content: '\00bb';
     position: absolute;
@@ -155,10 +167,8 @@ nav {
     right:0;
 }
 
-.facts {
-   float: left;
-   padding: 0.313rem;
-}
+
+/* Homepage image decor */
 .img1 {
     border-radius: 20px;
     float: right;
@@ -176,6 +186,8 @@ nav {
     position: absolute;
     z-index: 10;
 }
+
+/* Welcome tect section */
 .greetings {
     text-align: center;
     color: #36462b;
@@ -183,6 +195,7 @@ nav {
     margin-top: 10px;
     text-shadow: 0 4px 10px rgba(9, 82, 9, 0.168);;
 }
+/* Info page paragraph styling */
 .info-text {
     text-align: center;
     color: #543720;
@@ -193,7 +206,7 @@ nav {
     margin-left: 45px;
     text-shadow: 0 4px 10px rgba(106, 71, 29, 0.311);;
 }
-
+/* turorial section container */
 .tutorial-section {
     width: 75%;
     height: 350px;
@@ -208,6 +221,7 @@ nav {
     margin-left: 200px;
     box-shadow: 0 4px 10px rgba(7, 42, 6, 0.416);
 }
+/* turotial section heading */
 .tutorial {
     color: #fff6c8;
     font-size: 40px;
@@ -217,20 +231,21 @@ nav {
     text-align: center;
     box-shadow: 0 4px 10px rgba(34, 81, 11, 0.486);;
 }
+/* tutorial instructiom */
 .steps {
     text-align: center;
     color: #543720;
     font-size: 25px;
     margin-top: 20px;
 }
-
+/* Quiz seletion page */
 .quiz-title {
     text-align: center;
     color: #543720;
     font-size: 50px;
     margin-top: 20px;
 }
-
+/* Quiz category card layout */
 .options-container {
     display: flex;
     justify-content: center;
@@ -240,6 +255,7 @@ nav {
     background-color: #fff6c8;
     
 }
+/* Individual quiz category cards */
 .options {
     flex: 1;
     Max-width: 350px;
@@ -251,12 +267,13 @@ nav {
     box-sizing: border-box;
     border-radius: 20px;
 }
+/* card hover animation */
 .options:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
     filter: brightness(1.1);
 }
-
+/* card images */
 .options img {
     width: 100%;
     height: 250px;
@@ -269,7 +286,7 @@ nav {
 .options:hover img {
     filter: brightness(1.5);
 }
-
+/* card text content */
 .options-content {
     padding: 10px;
     display: flex;
@@ -278,6 +295,7 @@ nav {
     position: relative;
 }
 
+/* Quiz category heading */
 .options-content h2 {
     background-color: #36462b;
     color: #c7d5ad;
@@ -289,13 +307,14 @@ nav {
     text-transform: capitalize;
 
 }
+/* quiz category description text */
 .info {
     text-align: center;
     color: #543720;
     font-size: 25px;
     margin-top: 10x;
 }
-
+/* general button used throughout quizzes */
 .next-button {
     background-color: #543720;
     color: #c7d5ad;
@@ -312,7 +331,7 @@ nav {
     font-weight: bold;
 
 }
-
+/* hover effect */
 .next-button:hover {
     transform: scale(1.1);
     background-color: #36462b;
@@ -320,7 +339,7 @@ nav {
 
 
 }
-
+/* back button styling */
 .go-back-home a {
     background-color: #36462b;
     color: #c7d5ad;
@@ -344,11 +363,11 @@ nav {
 
 } 
 
-
+/* Hidden elements used by JavaScript */
 .hidden {
     display: none;
 }
-
+/* Makes entire quiz card clickable */
 .card-link {
     text-decoration: none;
     color: inherit;
@@ -357,11 +376,11 @@ nav {
 .card-link .options {
     cursor: pointer;
 }
-
+/* Glowinf effect */
 .sound:hover {
     box-shadow: 0 0 15px rgba(106, 176, 116, 0.7);
 }
-
+/* Quiz question box */
 .question-text {
     background-color: #36462b;
     padding: 20px 30px;
@@ -373,6 +392,7 @@ nav {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     margin-bottom: 20px;
 }
+/* Answer option button */
 .option-button {
     width: 50%;
     padding: 40px;
@@ -395,7 +415,7 @@ nav {
 .option-button:active {
     transform: scale(1);
 }
-
+/*  Explanation shown after answering*/
 .explantion-text {
     background-color: #fdf2b4;
     border-left: 6px solid #543720;
@@ -407,7 +427,7 @@ nav {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.4s ease;
 }
-
+/* Question progress indicator */
 .progress-text {
     font-size: 22px;
     color:#543720;
@@ -415,7 +435,7 @@ nav {
     font-weight: bold;
     text-align: center;
 }
-
+/* Results screen container */
 #results-view {
     background: #fff6c8;
     padding: 30px;
@@ -427,14 +447,14 @@ nav {
     text-align: center;
     animation: fadeIn 0.6s ease;
 }
-
+/* Final score display */
 #score-summary {
     font-size: 28px;
     color:#543720;
     font-weight: bold;
     margin-bottom: 20px
 }
-
+/* results page buttons */
 .result-button {
     background: linear-gradient(135deg, #543720, #7a5638);
     color: #fff6c8;
@@ -458,17 +478,18 @@ nav {
     margin-bottom: 10px;
     text-shadow: 2px 2px #d9b382;
 }
-
+/* Sparkle animation */
 @keyframes sparkle {
     0% {opacity: 0; transform: scale(0.8);}
     50% {opacity: 1; transform: scale(1.05);}
     100% {opacity: 0; transform: scale(0.8);}
 }
+/* Sparvle icon styling */
 .sparkle {
     animation: sparkle 1.2s ease-in-out infinite;
     font-size: 30px;
 }
-
+/* Feedback message shown after quiz completion */
 #result-message {
     background-color: #fdf2b4;
     padding: 15px 20px;
